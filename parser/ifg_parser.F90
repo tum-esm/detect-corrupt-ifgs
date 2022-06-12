@@ -148,7 +148,7 @@ errflag_CO(1:nmeas) = 0
 
 do imeas = 1,nmeas
     
-    print *,'Read OPUS parms:',imeas
+    print *, 'Read OPUS parms:', imeas, ' (', trim(measfile(imeas)), ')'
 
     ! read OPUS parms
     call read_opus_hdr(measfile(imeas),nptrfirstdir(imeas),nofblock(imeas))
