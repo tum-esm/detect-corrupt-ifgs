@@ -1,6 +1,8 @@
-I took the preprocessing code from PROFFAST 2.1. I removed everything except for the initial parsing of all files. Then I modified the code to continue on every warning and print out the missing charfilters.
+# Detect Corrupt Interferograms
 
-The script `run.py` (Python 3!) takes a repository and prints out all corrupt ifgs in this directory. Example output:
+I took the preprocessing code from PROFFAST 2.1 (https://www.imk-asf.kit.edu/english/3225.php). I removed everything except for the initial parsing of all files. Then I modified the code to continue on every warning and print out the missing "charfilters".
+
+The script `run.py` (Python 3, only standard libraries) takes a repository and prints out all corrupt ifgs in this directory. Example output:
 
 ```bash
 The corrupt ifgs are:
