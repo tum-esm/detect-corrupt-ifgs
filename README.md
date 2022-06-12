@@ -2,7 +2,7 @@
 
 I took the preprocessing code from PROFFAST 2.1 (https://www.imk-asf.kit.edu/english/3225.php). I removed everything except for the initial parsing of all files. Then I modified the code to continue on every warning and print out the missing "charfilters".
 
-The script `run.py` (Python 3, only standard libraries) takes a repository and prints out all corrupt ifgs in this directory. Example output:
+The script `main.py` (Python 3, only standard libraries) takes in a repository and prints out all corrupt ifgs in this directory. An example of usage can be found at the end of `main.py`. Example output:
 
 ```bash
 The corrupt ifgs are:
