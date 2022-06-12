@@ -1,3 +1,6 @@
 parser/ifg_parser
 parser/ifg_parser.inp
 parser/output.txt
+*.pyc
+__pycache__
+.DS_Store
