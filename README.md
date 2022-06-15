@@ -2,7 +2,7 @@
 
 This tool detects single interferograms that PROFFAST cannot process in a given directory.
 
-## We derived this tool from the PROFAST preprocessor
+## We derived this tool from the PROFFAST preprocessor
 
 We took the preprocessing code from PROFFAST 2.1 (https://www.imk-asf.kit.edu/english/3225.php) and removed everything except for the initial parsing of all files. Then we modified the code to continue on every warning and print out the missing "charfilters" as well as the corrupt filename.
 
