@@ -1,5 +1,7 @@
 parser/ifg_parser
 parser/ifg_parser.inp
+parser/glob_opusparms.mod
+parser/glob_prepro4.mod
 parser/output.txt
 *.pyc
 __pycache__
