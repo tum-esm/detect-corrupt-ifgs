@@ -8,19 +8,19 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 # TODO: What does the parser output, when the file is not an ifg at all?
 
 
-def write_input_file(ifgs: list[str]):
+def write_input_file(ifgs: list[str]) -> None:
     with open(f"{PROJECT_DIR}/parser/ifg_parser.template.inp", "r") as f:
         template_content = f.read()
     with open(f"{PROJECT_DIR}/parser/ifg_parser.inp", "w") as f:
         f.write(template_content.replace("%IFG_LIST%", "\n".join(ifgs)))
 
 
-def run(ifg_directory: str, silent: bool = True):
+def run(ifg_directory: str, silent: bool = True) -> dict[str, list[str]]:
     # generate input file
     ifgs = [f"{ifg_directory}/{x}" for x in os.listdir(ifg_directory)]
     ifgs = list(sorted(list(filter(os.path.isfile, ifgs))))
 
-    results = {}
+    results: dict[str, list[str]] = {}
 
     # run the parser
     while True:
