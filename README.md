@@ -1,3 +1,7 @@
+**⚠️ This has been integrated into https://github.com/tum-esm/utils and will not be updated anymore ⚠️**
+
+<br/>
+
 # Detect Corrupt Interferograms
 
 This tool detects individual interferogram files in a given directory that PROFFAST cannot process.
